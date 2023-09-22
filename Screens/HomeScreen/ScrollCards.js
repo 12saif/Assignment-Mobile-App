@@ -22,7 +22,7 @@ const ScrollCards = () => {
                     overflow: "hidden",
                     borderRadius: 10,
                     borderWidth: 1,
-                    borderColor: "#FF6000"
+                    borderColor: "#FF6000",
                 }}>
                 <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                     <View style={{ width: 180, margin: 10 }}>
@@ -42,16 +42,38 @@ const ScrollCards = () => {
                         </Text>
                         <Text style={{ fontSize: 25, fontWeight: 900, lineHeight: 30 }}>
                             Get Solution from Our{" "}
-                            <Text style={{ fontSize: 25, fontWeight: 900, color: "#FF6000", lineHeight: 30 }}>
+                            <Text
+                                style={{
+                                    fontSize: 25,
+                                    fontWeight: 900,
+                                    color: "#FF6000",
+                                    lineHeight: 30,
+                                }}>
                                 Top Astrologer
                             </Text>
                         </Text>
-                        <TouchableOpacity style={{ backgroundColor: '#FF6000', width: 120, marginTop: 10, borderRadius: 30, justifyContent: 'center', alignItems: 'center' }} >
-                            <Text style={{ color: '#fff', fontWeight: 600, fontSize: 18, paddingVertical: 10, paddingHorizontal: 10, }} >{`Avail Now >`} </Text>
+                        <TouchableOpacity
+                            style={{
+                                backgroundColor: "#FF6000",
+                                width: 120,
+                                marginTop: 10,
+                                borderRadius: 30,
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}>
+                            <Text
+                                style={{
+                                    color: "#fff",
+                                    fontWeight: 600,
+                                    fontSize: 18,
+                                    paddingVertical: 10,
+                                    paddingHorizontal: 10,
+                                }}>
+                                {`Avail Now >`}{" "}
+                            </Text>
                         </TouchableOpacity>
                     </View>
-                    <View
-                        style={{ position: "absolute", right: 10, }}>
+                    <View style={{ position: "absolute", right: 10 }}>
                         <Image
                             source={require("./assets/31.png")}
                             style={{
@@ -63,6 +85,11 @@ const ScrollCards = () => {
                     </View>
                 </View>
             </ImageBackground>
+            <View style={{ justifyContent: 'center', alignItems: 'center', flexDirection: 'row', marginVertical: 5 }}>
+                <Text style={{ height: 10, width: 10, backgroundColor: "#525FE1", borderRadius: 30, marginHorizontal: 5 }}></Text>
+                <Text style={{ height: 10, width: 10, backgroundColor: "#8B9EB3", borderRadius: 30, marginHorizontal: 5 }}></Text>
+                <Text style={{ height: 10, width: 10, backgroundColor: "#8B9EB3", borderRadius: 30, marginHorizontal: 5 }}></Text>
+            </View>
         </View>
     );
 };
