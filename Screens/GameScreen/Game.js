@@ -12,7 +12,7 @@ const Game = () => {
     });
   }, []);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{backgroundColor:'#ffff',height:'100%'}}>
       <Text>Game</Text>
     </SafeAreaView>
   )

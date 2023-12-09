@@ -12,8 +12,10 @@ const Notification = () => {
     });
   }, []);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{backgroundColor:'#ffff',height:'100%'}}>
+      <View>
       <Text>Notification</Text>
+      </View>
     </SafeAreaView>
   )
 }
