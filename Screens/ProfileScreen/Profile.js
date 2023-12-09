@@ -12,7 +12,7 @@ const Profile = () => {
     });
   }, []);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{backgroundColor:'#ffff',height:'100%'}}>
       <Text>Profile</Text>
     </SafeAreaView>
   )
