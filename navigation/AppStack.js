@@ -18,7 +18,7 @@ const profile = "Profile"
 
 export default function AppStack() {
   return (
-    <NavigationContainer>
+    <>
       <Tab.Navigator tabBarOptions={{ showLabel: false }}
         initialRouteName={HomeName}
         screenOptions={({ route }) => ({
@@ -46,6 +46,6 @@ export default function AppStack() {
         <Tab.Screen name={notifications} component={Notification} />
         <Tab.Screen name={profile} component={Profile} />
       </Tab.Navigator>
-    </NavigationContainer >
+    </ >
   );
 }
