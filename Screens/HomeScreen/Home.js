@@ -31,7 +31,7 @@ const Home = () => {
     <SafeAreaView style={{backgroundColor:'#ffff',height:'100%'}}>
       <Text style={{ fontSize: 26, fontWeight: '400', marginLeft: 16, marginBottom: 10 }}>Suggestion</Text>
       {data.map((item) => (
-        <View key={item.tag} style={{ height: 81, padding: 25, backgroundColor: '#DEF6FB', justifyContent: 'center', alignItems: 'center', marginVertical: 10 }}>
+        <View key={item.tag} style={{ padding: 25, backgroundColor: '#DEF6FB', justifyContent: 'center', alignItems: 'center', marginVertical: 10 }}>
           <View style={{ position: 'absolute', top: 0, right: 0, backgroundColor: '#00D3FF', padding: 4,borderBottomLeftRadius:5 }}>
           <Text style={{ fontSize: 16}}>{item.tag}</Text>
           </View>

@@ -1,10 +1,11 @@
-import { Image, Text, View, TouchableOpacity } from "react-native";
-import AppStack from "./navigation/AppStack";
+import AuthStack from "./navigation/AuthStack";
+import { NavigationContainer } from "@react-navigation/native";
 
-export default function App() {
+
+export default function App({ }) {
   return (
-    <>
-      <AppStack />
-    </>
+    <NavigationContainer>
+      <AuthStack />
+    </NavigationContainer>
   );
 }
